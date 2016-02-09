@@ -1,0 +1,7 @@
+F:\Pavan\BookSolution\BookUI\bin\BookUI.dll
+F:\Pavan\BookSolution\BookUI\bin\BookUI.pdb
+F:\Pavan\BookSolution\BookUI\bin\BookBL.dll
+F:\Pavan\BookSolution\BookUI\bin\BookBL.pdb
+F:\Pavan\BookSolution\BookUI\obj\Debug\BookUI.csprojResolveAssemblyReference.cache
+F:\Pavan\BookSolution\BookUI\obj\Debug\BookUI.dll
+F:\Pavan\BookSolution\BookUI\obj\Debug\BookUI.pdb
