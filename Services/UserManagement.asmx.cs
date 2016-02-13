@@ -17,13 +17,25 @@ namespace BookUI.Services
     [System.Web.Script.Services.ScriptService]
     public class UserManagement : System.Web.Services.WebService
     {
-
         [WebMethod]
         public string HelloWorld()
         {
             BusinessLayer blayer = new BusinessLayer();
 
-            return blayer.greet("I am different!");
+            return "I am different!";
+        }
+
+        [WebMethod]
+        public string registeruser()
+        {
+            string uname = "Kiran";
+            string email = "kiran@gmail.com";
+            string mobile = "9090809080";
+            string pwd = "test@123";
+
+            BL_Register register = new BL_Register();
+
+            return register.bl_registeruser(uname, email, mobile, pwd);
         }
     }
 }

@@ -7,3 +7,5 @@ F:\Pavan\BookSolution\BookUI\obj\Debug\BookUI.dll
 F:\Pavan\BookSolution\BookUI\obj\Debug\BookUI.pdb
 F:\Pavan\BookSolution\BookUI\bin\BookDL.dll
 F:\Pavan\BookSolution\BookUI\bin\BookDL.pdb
+F:\Pavan\BookSolution\BookUI\bin\Newtonsoft.Json.dll
+F:\Pavan\BookSolution\BookUI\bin\Newtonsoft.Json.xml
