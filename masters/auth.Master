@@ -1,19 +1,21 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.master.cs" Inherits="BookUI.masters.main" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="auth.master.cs" Inherits="BookUI.masters.auth" %>
 
 <%@ Register TagPrefix="books" TagName="header" Src="~/components/header.ascx" %>
+<%@ Register TagPrefix="books" TagName="authmain" Src="~/components/authMainMenu.ascx" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Login</title>
-    <link rel="icon" type="image/ico" href="../images/favicon.ico" />
-    <script type="text/javascript" src="../js/vendor/jquery.min.js"></script>
+    <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
     <div id="header">
-        <books:header runat="server" />
+        <books:header ID="Header1" runat="server" />
+    </div>
+    <div id="mainmenu">
+        <books:authmain runat="server" />
     </div>
     <div>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

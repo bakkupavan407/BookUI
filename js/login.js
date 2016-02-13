@@ -2,7 +2,7 @@
 
     $.ajax({
         type: "POST",
-        url: "../Services/UserManagement.asmx/HelloWorld",
+        url: "../services/UserManagement.asmx/HelloWorld",
         contentType: "application/json; charset=utf-8",
         dataType: "json",
         success: OnSuccess,
@@ -18,5 +18,5 @@
 });
 
 function loginUser() {
-    alert("heeelo");
+    window.location.href = "../views/settings.aspx";
 }

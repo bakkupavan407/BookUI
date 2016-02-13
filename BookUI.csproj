@@ -50,13 +50,21 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Components\header.ascx" />
+    <Content Include="components\authMainMenu.ascx" />
+    <Content Include="components\header.ascx" />
+    <Content Include="css\authmainmenu.css" />
     <Content Include="Default.aspx" />
+    <Content Include="images\favicon.ico" />
     <Content Include="js\login.js" />
     <Content Include="js\vendor\jquery-ui.min.js" />
     <Content Include="js\vendor\jquery.min.js" />
     <Content Include="Login.aspx" />
-    <Content Include="Services\UserManagement.asmx" />
+    <Content Include="services\UserManagement.asmx" />
+    <Content Include="views\dataentry.aspx" />
+    <Content Include="views\editdata.aspx" />
+    <Content Include="views\receptpayments.aspx" />
+    <Content Include="views\reports.aspx" />
+    <Content Include="views\settings.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -66,11 +74,18 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Components\header.ascx.cs">
+    <Compile Include="components\authMainMenu.ascx.cs">
+      <DependentUpon>authMainMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="components\authMainMenu.ascx.designer.cs">
+      <DependentUpon>authMainMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="components\header.ascx.cs">
       <DependentUpon>header.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Components\header.ascx.designer.cs">
+    <Compile Include="components\header.ascx.designer.cs">
       <DependentUpon>header.ascx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
@@ -87,6 +102,13 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="masters\auth.Master.cs">
+      <DependentUpon>auth.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="masters\auth.Master.designer.cs">
+      <DependentUpon>auth.Master</DependentUpon>
+    </Compile>
     <Compile Include="masters\main.Master.cs">
       <DependentUpon>main.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -95,9 +117,44 @@
       <DependentUpon>main.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\UserManagement.asmx.cs">
+    <Compile Include="services\UserManagement.asmx.cs">
       <DependentUpon>UserManagement.asmx</DependentUpon>
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="views\dataentry.aspx.cs">
+      <DependentUpon>dataentry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\dataentry.aspx.designer.cs">
+      <DependentUpon>dataentry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\editdata.aspx.cs">
+      <DependentUpon>editdata.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\editdata.aspx.designer.cs">
+      <DependentUpon>editdata.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\receptpayments.aspx.cs">
+      <DependentUpon>receptpayments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\receptpayments.aspx.designer.cs">
+      <DependentUpon>receptpayments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\reports.aspx.cs">
+      <DependentUpon>reports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\reports.aspx.designer.cs">
+      <DependentUpon>reports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\settings.aspx.cs">
+      <DependentUpon>settings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\settings.aspx.designer.cs">
+      <DependentUpon>settings.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -109,6 +166,10 @@
   <ItemGroup>
     <Content Include="masters\main.Master" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="masters\auth.Master" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
   <ProjectExtensions>

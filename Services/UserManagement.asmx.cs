@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Services;
+using BookBL;
 
 namespace BookUI.Services
 {
@@ -20,7 +21,9 @@ namespace BookUI.Services
         [WebMethod]
         public string HelloWorld()
         {
-            return "Hello xxxxxWorld";
+            BusinessLayer blayer = new BusinessLayer();
+
+            return blayer.greet("I am different!");
         }
     }
 }
