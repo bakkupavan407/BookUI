@@ -2,7 +2,7 @@
 
     $.ajax({
         type: "POST",
-        url: "../services/UserManagement.asmx/HelloWorld",
+        url: "../Services/UserManagement.asmx/HelloWorld",
         contentType: "application/json; charset=utf-8",
         dataType: "json",
         success: OnSuccess,
