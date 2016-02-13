@@ -1,19 +1,22 @@
 ﻿$(document).ready(function () {
 
-    $.ajax({
-        type: "POST",
-        url: "../Services/UserManagement.asmx/registeruser",
-        contentType: "application/json; charset=utf-8",
-        dataType: "json",
-        success: OnSuccess,
-        failure: function (response) {
-            alert("Something went wrong. Please try again later.");
-        }
-    });
+    $(document).on('click', '#registration-form', function () {
+        alert($("#registration-form").serializeArray());
+    })
+    ////$.ajax({
+    ////    type: "post",
+    ////    url: "../services/usermanagement.asmx/registeruser",
+    ////    contenttype: "application/json; charset=utf-8",
+    ////    datatype: "json",
+    ////    success: onsuccess,
+    ////    failure: function (response) {
+    ////        alert("something went wrong. please try again later.");
+    ////    }
+    ////});
 
-    function OnSuccess(response) {
-        console.log(response);
-    }
+    ////function onsuccess(response) {
+    ////    console.log(response);
+    ////}
 
 });
 

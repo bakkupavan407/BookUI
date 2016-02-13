@@ -26,16 +26,15 @@ namespace BookUI.Services
         }
 
         [WebMethod]
-        public string registeruser()
+        public string registeruser(string name, string email, string pwd)
         {
-            string uname = "Kiran";
-            string email = "kiran@gmail.com";
-            string mobile = "9090809080";
-            string pwd = "test@123";
+            string uname = name;
+            string emailid = email;
+            string pass = pwd;
 
-            BL_Register register = new BL_Register();
-
-            return register.bl_registeruser(uname, email, mobile, pwd);
+            //BL_Register register = new BL_Register();
+            return "dummy";
+            //return register.bl_registeruser(uname, email, pwd);
         }
     }
 }
